@@ -9,8 +9,8 @@ export default defineConfig({
     host: true,
     port: 5173,
     proxy: {
-      '/api': { target: 'http://127.0.0.1:8000', changeOrigin: true },
-      '/audio': { target: 'http://127.0.0.1:8000', changeOrigin: true },
+      '/api': { target: 'https://tribal-ai-sih-26042.onrender.com/', changeOrigin: true },
+      '/audio': { target: 'https://tribal-ai-sih-26042.onrender.com/', changeOrigin: true },
     },
   },
   build: { outDir: 'dist', sourcemap: false, chunkSizeWarningLimit: 900 },
